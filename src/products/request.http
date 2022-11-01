@@ -1,0 +1,14 @@
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products/create
+Content-Type: application/json
+
+{
+    "name" : "Carne picada premium",
+    "price": 359,
+    "categoryId": 1
+}
+
+###
+GET http://localhost:3000/products/3

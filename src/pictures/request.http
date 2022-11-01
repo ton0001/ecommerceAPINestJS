@@ -1,0 +1,11 @@
+GET http://localhost:3000/pictures
+
+###
+POST http://localhost:3000/pictures/create
+Content-Type: application/json
+
+{
+    "url" : "https://dummyimage.com/500",
+    "product": 12
+
+}
