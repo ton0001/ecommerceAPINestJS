@@ -12,4 +12,7 @@ export class User {
     @Column()
     role: string;
 
+    @Column()
+    password: string;
+
 }

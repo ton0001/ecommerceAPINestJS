@@ -15,12 +15,14 @@ import { CategoryModule } from './category/category.module';
 import { Category } from './category/category.entity';
 import { UserController } from './user/user.controller';
 import { UserModule } from './user/user.module';
+import { User } from './user/user.entity';
+import { AuthService } from './user/auth.service';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
     type: 'sqlite',
     database: 'db.sqlite',
-    entities: [Picture, Product, Category],
+    entities: [Picture, Product, Category, User],
     synchronize: true
   }),
   PicturesModule,
@@ -33,7 +35,7 @@ import { UserModule } from './user/user.module';
   // providers: [AppService],
   // controllers: [AppController, PicturesController],
   // providers: [AppService, PicturesService],
-  controllers: [AppController, UserController],
+  controllers: [AppController],
   providers: [AppService]
 })
 export class AppModule {}

@@ -6,6 +6,6 @@ Content-Type: application/json
 
 {
     "url" : "https://dummyimage.com/500",
-    "product": 12
+    "product": 3
 
 }
