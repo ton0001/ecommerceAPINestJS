@@ -29,6 +29,8 @@ export class AuthService {
 
         const userCreated = await this.usersService.create(name, password, role)
 
+        delete userCreated.password;
+
         return userCreated;
     }
 

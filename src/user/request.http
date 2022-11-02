@@ -5,15 +5,16 @@ POST http://localhost:3000/users/register
 Content-Type: application/json
 
 {
-    "name" : "eltonga",
-    "role": "ADMIN",
+    "name" : "miguelito",
+    "role": "GUEST",
     "password": "123456"
 }
 
+###
 POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-    "name" : "Gastón Gómez",
+    "name" : "juanito2106",
     "password": "123456"
 }
